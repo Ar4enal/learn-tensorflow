@@ -21,8 +21,8 @@ print</span>(result)
 
 </div>
 
-　　运行后，如果得到输出b'Hello,world!'，证明运行成功。
+运行后，如果得到输出b'Hello,world!'，证明运行成功。
 
 注意事项：
 
-　 1、Python3.0以后，使用print result会报错，改为print(result)即可。
+1、Python3.0以后，使用print result会报错，改为print(result)即可。
