@@ -1,14 +1,14 @@
-1¡¢**°²×°Python¡£**
+ï»¿1ã€**å®‰è£…Pythonã€‚**
 
-[µã»÷´Ë´¦](https://www.python.org/downloads/release/python-352/)ÏÂÔØPython3.5.2¡£°²×°PythonÊ±Ò»¶¨ÒªÑ¡Ôñ°²×°pip¡£
+[ç‚¹å‡»æ­¤å¤„](https://www.python.org/downloads/release/python-352/)ä¸‹è½½Python3.5.2ã€‚å®‰è£…Pythonæ—¶ä¸€å®šè¦é€‰æ‹©å®‰è£…pipã€‚
 
-2¡¢**ÅäÖÃPython»·¾³±äÁ¿¡£**
+2ã€**é…ç½®Pythonç¯å¢ƒå˜é‡ã€‚**
 
-½«%°²×°Â·¾¶%\ScriptsÌí¼Óµ½PathÏÂÃæ¡£
+å°†%å®‰è£…è·¯å¾„%\Scriptsæ·»åŠ åˆ°Pathä¸‹é¢ã€‚
 
-3¡¢**ĞŞ¸ÄPip¹úÄÚÔ´¡£**
+3ã€**ä¿®æ”¹Pipå›½å†…æºã€‚**
 
-ÔÚC:\Users\l{ÄãµÄÓÃ»§Ãû}\AppData\LocalÏÂÃæ´´½¨pipÎÄ¼ş¼Ğ£¬ÔÚpipÎÄ¼ş¼ĞÖĞĞÂ½¨pip.confÎÄ¼ş£¬Ğ´ÈëÒÔÏÂÄÚÈİ¡£
+åœ¨C:\Users\l{ä½ çš„ç”¨æˆ·å}\AppData\Localä¸‹é¢åˆ›å»ºpipæ–‡ä»¶å¤¹ï¼Œåœ¨pipæ–‡ä»¶å¤¹ä¸­æ–°å»ºpip.confæ–‡ä»¶ï¼Œå†™å…¥ä»¥ä¸‹å†…å®¹ã€‚
 
 <pre>
 [global]
@@ -17,28 +17,28 @@ index-url=http://mirrors.aliyun.com/pypi/simple/
 trusted-host=mirrors.aliyun.com  
 </pre>
 
-**4¡¢°²×°Tensorflow¡£**
+**4ã€å®‰è£…Tensorflowã€‚**
 
-´ò¿ªPowerShell£¬Ö´ĞĞÒÔÏÂ´úÂë¡£
+æ‰“å¼€PowerShellï¼Œæ‰§è¡Œä»¥ä¸‹ä»£ç ã€‚
 
 <pre>
 pip install --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-0.12.0rc1-cp35-cp35m-win_amd64.whl
 </pre>
 
-ÉÏÃæµÄ°²×°°ü°²×°ºó£¬WindowsÏÂTensorboardÎŞ·¨ÏÔÊ¾ÈÎºÎÊı¾İ£¬¿ÉÒÔÊ¹ÓÃÏÂÃæµÄ°²×°°ü°²×°¡£
+ä¸Šé¢çš„å®‰è£…åŒ…å®‰è£…åï¼ŒWindowsä¸‹Tensorboardæ— æ³•æ˜¾ç¤ºä»»ä½•æ•°æ®ï¼Œå¯ä»¥ä½¿ç”¨ä¸‹é¢çš„å®‰è£…åŒ…å®‰è£…ã€‚
 
 <pre>
 pip install --upgrade http://ci.tensorflow.org/view/Nightly/job/nightly-win/DEVICE=cpu,OS=windows/lastSuccessfulBuild/artifact/cmake_build/tf_python/dist/tensorflow-0.12.1-cp35-cp35m-win_amd64.whl
 </pre>
 
-**5¡¢²âÊÔ°²×°¡£**
+**5ã€æµ‹è¯•å®‰è£…ã€‚**
 
-´ò¿ªPython IDLE£¬ÊäÈëimport tensorflow as tf£¬ÔËĞĞ¡£Èç¹û²»±¨´í£¬Ö¤Ã÷°²×°³É¹¦¡£
+æ‰“å¼€Python IDLEï¼Œè¾“å…¥import tensorflow as tfï¼Œè¿è¡Œã€‚å¦‚æœä¸æŠ¥é”™ï¼Œè¯æ˜å®‰è£…æˆåŠŸã€‚
 
-6¡¢**²Î¿¼×ÊÁÏ¡£**
+6ã€**å‚è€ƒèµ„æ–™ã€‚**
 
-¡¶Ô­ÉúWindows°²×°Tensorflow0.12µÄ·½·¨¡·£º[http://blog.csdn.net/include1224/article/details/53452824](http://blog.csdn.net/include1224/article/details/53452824)
+ã€ŠåŸç”ŸWindowså®‰è£…Tensorflow0.12çš„æ–¹æ³•ã€‹ï¼š[http://blog.csdn.net/include1224/article/details/53452824](http://blog.csdn.net/include1224/article/details/53452824)
 
-**×¢ÒâÊÂÏî£º**
+**æ³¨æ„äº‹é¡¹ï¼š**
 
-1¡¢Ê¹ÓÃ²Î¿¼×ÊÁÏÖĞµÄ°ü°²×°µÄTensorflow£¬ÆäÖĞµÄTensorBoard£¬ÔÚWindowsÏÂÎŞ·¨Õı³£ÏÔÊ¾£¬ÕâÊÇÓÉÓÚÈ±ÉÙ×ÊÔ´°üµÄÔ­Òò¡£ÏêÇéÇë¼û£º[https://github.com/tensorflow/tensorflow/issues/5983](https://github.com/tensorflow/tensorflow/issues/5983)¡£¹Ù·½¸ø³öµÄ½â¾ö·½°¸ÊÇÔÚĞÂ°æ±¾³öÀ´ÒÔÇ°£¬Ê¹ÓÃ[http://ci.tensorflow.org/view/Nightly/job/nightly-win/](http://ci.tensorflow.org/view/Nightly/job/nightly-win/)µÄ°æ±¾°²×°¡£rc0ºÍrc1¶¼´æÔÚÕâ¸öÎÊÌâ¡£
+1ã€ä½¿ç”¨å‚è€ƒèµ„æ–™ä¸­çš„åŒ…å®‰è£…çš„Tensorflowï¼Œå…¶ä¸­çš„TensorBoardï¼Œåœ¨Windowsä¸‹æ— æ³•æ­£å¸¸æ˜¾ç¤ºï¼Œè¿™æ˜¯ç”±äºç¼ºå°‘èµ„æºåŒ…çš„åŸå› ã€‚è¯¦æƒ…è¯·è§ï¼š[https://github.com/tensorflow/tensorflow/issues/5983](https://github.com/tensorflow/tensorflow/issues/5983)ã€‚å®˜æ–¹ç»™å‡ºçš„è§£å†³æ–¹æ¡ˆæ˜¯åœ¨æ–°ç‰ˆæœ¬å‡ºæ¥ä»¥å‰ï¼Œä½¿ç”¨[http://ci.tensorflow.org/view/Nightly/job/nightly-win/](http://ci.tensorflow.org/view/Nightly/job/nightly-win/)çš„ç‰ˆæœ¬å®‰è£…ã€‚rc0å’Œrc1éƒ½å­˜åœ¨è¿™ä¸ªé—®é¢˜ã€‚
