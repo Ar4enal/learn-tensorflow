@@ -1,3 +1,4 @@
+# 02 Tensorflow Hello World程序
 import tensorflow as tf 
 
 # 创建常量

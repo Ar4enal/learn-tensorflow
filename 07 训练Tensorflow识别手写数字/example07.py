@@ -1,3 +1,4 @@
+# 07 使用Tensorflow识别手写数字
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 

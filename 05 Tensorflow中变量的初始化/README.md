@@ -1,49 +1,46 @@
-´ò¿ªPython Shell£¬ÊäÈë**import tensorflow as tf**£¬È»ºó¿ÉÒÔÖ´ÐÐÒÔÏÂ´úÂë¡£
+# 05 Tensorflowä¸­å˜é‡åˆå§‹åŒ–
 
-1¡¢´´½¨Ò»¸ö2*3µÄ¾ØÕó£¬²¢ÈÃËùÓÐÔªËØµÄÖµÎª0.£¨ÀàÐÍÎªtf.float£©
+æ‰“å¼€Python Shellï¼Œè¾“å…¥import tensorflow as tfï¼Œç„¶åŽå¯ä»¥æ‰§è¡Œä»¥ä¸‹ä»£ç ã€‚
 
-<pre>
+1. åˆ›å»ºä¸€ä¸ª2*3çš„çŸ©é˜µï¼Œå¹¶è®©æ‰€æœ‰å…ƒç´ çš„å€¼ä¸º0.ï¼ˆç±»åž‹ä¸ºtf.floatï¼‰
+
+```python
 a = tf.zeros([2,3], dtype = tf.float32)
-</pre>
+```
 
-</div>
+2. åˆ›å»ºä¸€ä¸ª3*4çš„çŸ©é˜µï¼Œå¹¶è®©æ‰€æœ‰å…ƒç´ çš„å€¼ä¸º1.
 
-2¡¢´´½¨Ò»¸ö3*4µÄ¾ØÕó£¬²¢ÈÃËùÓÐÔªËØµÄÖµÎª1.
-
-<pre>
+```python
 b = tf.ones([3,4])
-</pre>
+```
 
-3¡¢´´½¨Ò»¸ö1*10µÄ¾ØÕó£¬Ê¹ÓÃ2À´Ìî³ä¡££¨ÀàÐÍÎªtf.int32£¬¿ÉºöÂÔ£©
+3. åˆ›å»ºä¸€ä¸ª1*10çš„çŸ©é˜µï¼Œä½¿ç”¨2æ¥å¡«å……ã€‚ï¼ˆç±»åž‹ä¸ºtf.int32ï¼Œå¯å¿½ç•¥ï¼‰
 
-<pre>
+```python
 c = tf.constant(2, dtype=tf.int32, shape=[1,10])
-</pre>
+```
 
-4¡¢´´½¨Ò»¸ö1*10µÄ¾ØÕó£¬ÆäÖÐµÄÔªËØ·ûºÏÕýÌ¬·Ö²¼£¬Æ½¾ùÖµÊÇ20£¬±ê×¼Æ«²îÊÇ3.
+4ã€åˆ›å»ºä¸€ä¸ª1*10çš„çŸ©é˜µï¼Œå…¶ä¸­çš„å…ƒç´ ç¬¦åˆæ­£æ€åˆ†å¸ƒï¼Œå¹³å‡å€¼æ˜¯20ï¼Œæ ‡å‡†åå·®æ˜¯3.
 
-<pre>
+```python
 d = tf.random_normal([1,10],mean = 20, stddev = 3)
-</pre>
+```
 
-ÉÏÃæËùÓÐµÄÖµ¶¼¿ÉÒÔÓÃÀ´³õÊ¼»¯±äÁ¿¡£ÀýÈçÓÃ0.01À´Ìî³äÒ»¸ö1*2µÄ¾ØÕóÀ´³õÊ¼»¯Ò»¸ö½ÐbiasµÄ±äÁ¿¡£
+ä¸Šé¢æ‰€æœ‰çš„å€¼éƒ½å¯ä»¥ç”¨æ¥åˆå§‹åŒ–å˜é‡ã€‚ä¾‹å¦‚ç”¨0.01æ¥å¡«å……ä¸€ä¸ª1*2çš„çŸ©é˜µæ¥åˆå§‹åŒ–ä¸€ä¸ªå«biasçš„å˜é‡ã€‚
 
-<pre>
+```python
 bias = tf.Variable(tf.zeros([1,2]) + 0.01)
-</pre>
+```
 
-Èç¹ûÄãÏë²é¿´ÕâÐ©Á¿¾ßÌåµÄÖµ£¬¿ÉÒÔÔÚSessionÖÐÖ´ÐÐËü²¢Êä³ö¡£
+å¦‚æžœä½ æƒ³æŸ¥çœ‹è¿™äº›é‡å…·ä½“çš„å€¼ï¼Œå¯ä»¥åœ¨Sessionä¸­æ‰§è¡Œå®ƒå¹¶è¾“å‡ºã€‚
 
-<pre>
+```python
 sess = tf.Session()
 print(sess.run(d))
-</pre>
+```
 
-ÕâÀï£¬ÎÒµÃµ½ÁËÒÔÏÂµÄÖµ£º
+è¿™é‡Œï¼Œæˆ‘å¾—åˆ°äº†ä»¥ä¸‹çš„å€¼ï¼š
 
-[[ 22.44503784, 18.19544983, 17.89671898, 17.67314911, 19.45074844,
-18.6805439, 18.56541443, 16.59041977, 22.11240005, 19.12819099]]¡£Ëü¾ÍÊÇÉÏÃæ4ÎÒÃÇ´´½¨µÄÁ¿µÄÖµ¡£
+[[ 22.44503784  18.19544983  17.89671898  17.67314911  19.45074844
+   18.6805439   18.56541443  16.59041977  22.11240005  19.12819099]]ã€‚å®ƒå°±æ˜¯ä¸Šé¢4æˆ‘ä»¬åˆ›å»ºçš„é‡çš„å€¼ã€‚
 
-²Î¿¼×ÊÁÏ
-
-¡¶TensorflowÑ§Ï°±Ê¼Ç£¨3£©¡·£º[http://blog.sina.com.cn/s/blog_8b2a28790102wnkh.html](http://blog.sina.com.cn/s/blog_8b2a28790102wnkh.html)

@@ -1,51 +1,49 @@
-´ò¿ªPython Shell£¬ÏÈÊäÈë**import tensorflow as tf**£¬È»ºó¿ÉÒÔÖ´ĞĞÒÔÏÂÃüÁî¡£
+# 04 Tensorflowä¸­çš„å¸¸é‡ã€å˜é‡å’Œæ•°æ®ç±»å‹
 
-TensorflowÖĞµÄ³£Á¿´´½¨·½·¨£º
+æ‰“å¼€Python Shellï¼Œå…ˆè¾“å…¥import tensorflow as tfï¼Œç„¶åå¯ä»¥æ‰§è¡Œä»¥ä¸‹å‘½ä»¤ã€‚
 
-<pre>
+Tensorflowä¸­çš„å¸¸é‡åˆ›å»ºæ–¹æ³•ï¼š
+
+```python
 hello = tf.constant('Hello,world!', dtype=tf.string)
-</pre>
+```
 
-ÆäÖĞ£¬'Hello,world!'ÊÇ³£Á¿³õÊ¼Öµ£»tf.stringÊÇ³£Á¿ÀàĞÍ£¬¿ÉÒÔÊ¡ÂÔ¡£³£Á¿ºÍ±äÁ¿¶¼¿ÉÒÔÈ¥¹¹½¨TensorflowÖĞµÄÍ¼¡£
+å…¶ä¸­ï¼Œ'Hello,world!'æ˜¯å¸¸é‡åˆå§‹å€¼ï¼›tf.stringæ˜¯å¸¸é‡ç±»å‹ï¼Œå¯ä»¥çœç•¥ã€‚å¸¸é‡å’Œå˜é‡éƒ½å¯ä»¥å»æ„å»ºTensorflowä¸­çš„å›¾ã€‚
 
-TensorflowÖĞ±äÁ¿µÄ´´½¨·½·¨£º
+Tensorflowä¸­å˜é‡çš„åˆ›å»ºæ–¹æ³•ï¼š
 
-<pre>
+```python
 a = tf.Variable(10, dtype=tf.int32)
-</pre>
+```
 
-ÆäÖĞ£¬10ÊÇ±äÁ¿³õÊ¼Öµ£¬tf.int32ÊÇ±äÁ¿µÄÀàĞÍ¡£
+å…¶ä¸­ï¼Œ10æ˜¯å˜é‡åˆå§‹å€¼ï¼Œtf.int32æ˜¯å˜é‡çš„ç±»å‹ã€‚
 
-TensorflowÖĞ£¬Ö÷ÒªÓĞÒÔÏÂ¼¸ÖÖÊı¾İÀàĞÍ¡£
+Tensorflowä¸­ï¼Œä¸»è¦æœ‰ä»¥ä¸‹å‡ ç§æ•°æ®ç±»å‹ã€‚
 
-tf.int8£º8Î»ÕûÊı¡£
+tf.int8ï¼š8ä½æ•´æ•°ã€‚
 
-tf.int16£º16Î»ÕûÊı¡£
+tf.int16ï¼š16ä½æ•´æ•°ã€‚
 
-tf.int32£º32Î»ÕûÊı¡£
+tf.int32ï¼š32ä½æ•´æ•°ã€‚
 
-tf.int64£º64Î»ÕûÊı¡£
+tf.int64ï¼š64ä½æ•´æ•°ã€‚
 
-tf.uint8£º8Î»ÎŞ·ûºÅÕûÊı¡£
+tf.uint8ï¼š8ä½æ— ç¬¦å·æ•´æ•°ã€‚
 
-tf.uint16£º16Î»ÎŞ·ûºÅÕûÊı¡£
+tf.uint16ï¼š16ä½æ— ç¬¦å·æ•´æ•°ã€‚
 
-tf.float16£º16Î»¸¡µãÊı¡£
+tf.float16ï¼š16ä½æµ®ç‚¹æ•°ã€‚
 
-tf.float32£º32Î»¸¡µãÊı¡£
+tf.float32ï¼š32ä½æµ®ç‚¹æ•°ã€‚
 
-tf.float64£º64Î»¸¡µãÊı¡£
+tf.float64ï¼š64ä½æµ®ç‚¹æ•°ã€‚
 
-tf.double£ºµÈÍ¬ÓÚtf.float64¡£
+tf.doubleï¼šç­‰åŒäºtf.float64ã€‚
 
-tf.string£º×Ö·û´®¡£
+tf.stringï¼šå­—ç¬¦ä¸²ã€‚
 
-tf.bool£º²¼¶ûĞÍ¡£
+tf.boolï¼šå¸ƒå°”å‹ã€‚
 
-tf.complex64£º64Î»¸´Êı¡£
+tf.complex64ï¼š64ä½å¤æ•°ã€‚
 
-tf.complex128£º128Î»¸´Êı¡£
-
-²Î¿¼×ÊÁÏ£º
-
-¡¶ÕÅÁ¿µÄ½×¡¢ĞÎ×´¡¢Êı¾İÀàĞÍ¡·£º[http://wiki.jikexueyuan.com/project/tensorflow-zh/resources/dims_types.html](http://wiki.jikexueyuan.com/project/tensorflow-zh/resources/dims_types.html)
+tf.complex128ï¼š128ä½å¤æ•°ã€‚

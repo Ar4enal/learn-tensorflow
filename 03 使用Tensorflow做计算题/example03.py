@@ -1,6 +1,7 @@
+# 03 使用Tensorflow做计算题
 import tensorflow as tf 
 
-# 输入储存容器
+# 输入占位符
 a = tf.placeholder(tf.float16)
 b = tf.placeholder(tf.float16)
 c = tf.placeholder(tf.float16) 
