@@ -1,3 +1,4 @@
+# 10 Tensorflow模型保存与读取
 import tensorflow as tf
 import numpy as np
 import os
@@ -48,3 +49,5 @@ for i in range(1000):
     if(i%50==0): #每50次保存一次模型
         save_path = saver.save(sess, 'tmp/model.ckpt') #保存模型到tmp/model.ckpt，注意一定要有一层文件夹，否则保存不成功！！！
         print("模型保存：%s 当前训练损失：%s"%(save_path, loss_value))
+
+print('done')

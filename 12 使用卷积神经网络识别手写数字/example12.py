@@ -77,3 +77,5 @@ for i in range(1000):
 
 # 关闭
 sess.close()
+
+print('done')
