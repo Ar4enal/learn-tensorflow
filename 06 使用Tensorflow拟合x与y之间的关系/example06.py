@@ -37,3 +37,5 @@ for i in range(1000): #训练1000次
     _,loss_value = sess.run([train_step,loss],feed_dict={xs:x_data,ys:y_data}) # 进行梯度下降运算，并计算每一步的损失
     if(i%50==0):
         print(loss_value) # 每50步输出一次损失
+
+print('done')

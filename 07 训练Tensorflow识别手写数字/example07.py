@@ -3,7 +3,8 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 # 获取数据（如果存在就读取，不存在就下载完再读取）
-mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
+mnist = input_data.read_data_sets("MNIST_data/", one_hot=True, source_url="http://yann.lecun.com/exdb/mnist/")
+print('download complete!')
 
 # 输入
 x = tf.placeholder("float", [None, 784]) #输入占位符（每张手写数字784个像素点）
@@ -25,7 +26,8 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 
-for i in range(10): # 训练10次
+for i in range(1000):
+    print('train: %s'%i)
     batch_xs, batch_ys = mnist.train.next_batch(100) # 随机取100个手写数字图片
     sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys}) # 执行梯度下降算法，输入值x：batch_xs，输入值y：batch_ys
 

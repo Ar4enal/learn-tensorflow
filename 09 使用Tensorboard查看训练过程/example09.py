@@ -1,3 +1,4 @@
+# 09 使用Tensorboard查看训练过程
 import tensorflow as tf
 import numpy as np
 
@@ -57,3 +58,5 @@ for i in range(1000):
     if(i%50==0): #每50次写一次日志
         result = sess.run(merged,feed_dict={xs:x_data,ys:y_data}) #计算需要写入的日志数据
         writer.add_summary(result,i) #将日志数据写入文件
+
+print('done')

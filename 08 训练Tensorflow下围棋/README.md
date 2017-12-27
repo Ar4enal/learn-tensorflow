@@ -1,19 +1,18 @@
-ÕâÀï½éÉÜÒ»ÏÂ¿ªÔ´ÏîÄ¿Mugo£¬Ëü»ùÓÚTensorflow£¬¿ÉÒÔÊ¹ÓÃsgfµÄÆåÆ×ÑµÁ·Î§Æå»úÆ÷ÈË£¬¸úÄãÏÂÎ§Æå£¬ÕâÀïÖ±½Ó¸ø³ö±¾ÈËÐÞ¸ÄÍêÉÆºÃµÄÏîÄ¿£¬Ö»½éÉÜÒ»ÏÂÓÃ·¨¡£
+ è¿™é‡Œä»‹ç»ä¸€ä¸‹å¼€æºé¡¹ç›®Mugoï¼Œå®ƒåŸºäºŽTensorflowï¼Œå¯ä»¥ä½¿ç”¨sgfçš„æ£‹è°±è®­ç»ƒå›´æ£‹æœºå™¨äººï¼Œè·Ÿä½ ä¸‹å›´æ£‹ï¼Œè¿™é‡Œç›´æŽ¥ç»™å‡ºæœ¬äººä¿®æ”¹å®Œå–„å¥½çš„é¡¹ç›®ï¼Œåªä»‹ç»ä¸€ä¸‹ç”¨æ³•ã€‚
 
-Á´½Ó£º[http://pan.baidu.com/s/1jHHA4D4](http://pan.baidu.com/s/1jHHA4D4) ÃÜÂë£ºksht
+ é“¾æŽ¥ï¼š[http://pan.baidu.com/s/1jHHA4D4](http://pan.baidu.com/s/1jHHA4D4) å¯†ç ï¼šksht
 
-×¼±¸¹¤×÷£º
+ å‡†å¤‡å·¥ä½œï¼š
+ 
+ æ‰“å¼€Windows PowShellï¼Œè¾“å…¥pip install arghï¼Œç„¶åŽè¾“å…¥pip install sgfï¼Œå°†ç¼ºå°‘çš„å›´æ£‹pythonæ¨¡å—å®‰è£…ä¸Šã€‚
+ 
+ ä½¿ç”¨æ–¹æ³•ï¼š
+ 
+1. å°†sgfçš„å›´æ£‹æ£‹è°±æ”¾åˆ°dataæ–‡ä»¶å¤¹ä¸‹é¢ã€‚ï¼ˆå¯ä»¥ä»Žhttps://u-go.net/gamerecords/ä¸‹è½½ï¼‰
+2. åŒå‡»è¿è¡Œâ€œz01 æ£‹è°±é¢„å¤„ç†.batâ€ï¼Œé¢„å¤„ç†æ£‹è°±ã€‚
+3. åŒå‡»â€œz02 è®­ç»ƒ.batâ€ï¼Œä½¿ç”¨æ£‹è°±è®­ç»ƒæ¨¡åž‹ã€‚
+4. åŒå‡»â€œz03 ä¸‹æ£‹.batâ€ï¼Œå°±å¯ä»¥è·Ÿè®­ç»ƒå‡ºæ¥çš„AIä¸‹æ£‹ã€‚ï¼ˆä¹Ÿå¯ä»¥åŒå‡»GoGui.exeï¼Œé…ç½®å¥½æœºå™¨äººä¸‹æ£‹ï¼Œå‚æ•°æ˜¯python main.py gtp policy --read-file=tmp\savedmodelï¼‰
 
-´ò¿ªWindows PowShell£¬ÊäÈëpip install argh£¬È»ºóÊäÈëpip install sgf£¬½«È±ÉÙµÄÎ§ÆåpythonÄ£¿é°²×°ÉÏ¡£
+æœ¬äººå·²ç»ç”¨æ£‹è°±è®­ç»ƒäº†5ä¸‡å¤šæ¬¡ï¼Œå›´æ£‹ä¸‹çš„åŸºæœ¬æœ‰é‚£ä¹ˆé‚£ä¹ˆç‚¹æ ·äº†ã€‚
 
-Ê¹ÓÃ·½·¨£º
-1¡¢½«sgfµÄÎ§ÆåÆåÆ×·Åµ½dataÎÄ¼þ¼ÐÏÂÃæ¡££¨¿ÉÒÔ´Óhttps://u-go.net/gamerecords/ÏÂÔØ£©
-2¡¢Ë«»÷ÔËÐÐ¡°z01 ÆåÆ×Ô¤´¦Àí.bat¡±£¬Ô¤´¦ÀíÆåÆ×¡£
-3¡¢Ë«»÷¡°z02 ÑµÁ·.bat¡±£¬Ê¹ÓÃÆåÆ×ÑµÁ·Ä£ÐÍ¡£
-4¡¢Ë«»÷¡°z03 ÏÂÆå.bat¡±£¬¾Í¿ÉÒÔ¸úÑµÁ·³öÀ´µÄAIÏÂÆå¡££¨Ò²¿ÉÒÔË«»÷GoGui.exe£¬ÅäÖÃºÃ»úÆ÷ÈËÏÂÆå£¬²ÎÊýÊÇpython main.py gtp policy --read-file=tmp\savedmodel£©
-
-±¾ÈËÒÑ¾­ÓÃÆåÆ×ÑµÁ·ÁË5Íò¶à´Î£¬Î§ÆåÏÂµÄ»ù±¾ÓÐÄÇÃ´ÄÇÃ´µãÑùÁË¡£
-
-²Î¿¼×ÊÁÏ£º
-
-1¡¢Github Mugo¿ªÔ´ÏîÄ¿£º[https://github.com/brilee/MuGo](https://github.com/brilee/MuGo)
+Github Mugoå¼€æºé¡¹ç›®ï¼š [https://github.com/brilee/MuGo](https://github.com/brilee/MuGo)
