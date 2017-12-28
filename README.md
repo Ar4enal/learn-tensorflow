@@ -2,7 +2,7 @@
 
 ## Tensorflow Start
 
-1. Install tensorflow on windows
+001. Install tensorflow on windows
 2. Install tensorflow on ubuntu
 3. Tensorflow Hello World
 
