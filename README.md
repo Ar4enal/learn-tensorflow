@@ -2,9 +2,10 @@
 
 ## Tensorflow Getting Started
 
-001. [Install tensorflow on windows](https://github.com/tengge1/learn-tensorflow/tree/master/001_install_tensorflow_on_windows/README.md)
-002. [Install tensorflow on ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/002_install_tensorflow_on_ubuntu/README.md)
-003. [Install tensorboard on ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/003_install_tensorboard_on_ubuntu/README.md)
+1. [Install tensorflow on windows](https://github.com/tengge1/learn-tensorflow/tree/master/001_install_tensorflow_on_windows/README.md)
+2. [Install tensorflow on ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/002_install_tensorflow_on_ubuntu/README.md)
+3. [Install tensorboard on ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/003_install_tensorboard_on_ubuntu/README.md)
+4. [Tensorflow hello world](https://github.com/tengge1/learn-tensorflow/tree/master/004_tensorflow_hello_world/README.md)
 
 ## Tensorflow Tutorials
 
