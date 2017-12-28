@@ -1,4 +1,4 @@
-# 003 Install tensorflow board on ubuntu
+# 003 Install tensorboard on ubuntu
 
 1. Open bash and type in `pip install tensorboard` or `pip3 install tensorboard`.
 
