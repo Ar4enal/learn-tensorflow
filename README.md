@@ -10,8 +10,8 @@
 ## Tutorials
 
 1. [Constant](https://github.com/tengge1/learn-tensorflow/tree/master/101_constant/example101.py)
-2. [Basic Math Calculation](https://github.com/tengge1/learn-tensorflow/tree/master/101_constant/example102.py)
-3. [Using Conditional Phrase](https://github.com/tengge1/learn-tensorflow/tree/master/101_constant/example103.py)
+2. [Basic Math Calculation](https://github.com/tengge1/learn-tensorflow/tree/master/102_basic_math_calculation/example102.py)
+3. [Using Conditional Phrase](https://github.com/tengge1/learn-tensorflow/tree/master/103_using_conditional_phrase/example103.py)
 
 ## Samples
 
