@@ -1,4 +1,4 @@
-# 101 constant
+# 101 Constant
 import tensorflow as tf
 
 a = tf.constant('Hello, world!')
