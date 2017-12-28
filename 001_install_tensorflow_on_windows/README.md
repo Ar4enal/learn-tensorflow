@@ -1,4 +1,4 @@
-# 001 Install tensorflow on windows
+# 001 Install Tensorflow on Windows
 
 1. Install python.
 
