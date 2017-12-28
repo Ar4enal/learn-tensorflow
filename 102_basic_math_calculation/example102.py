@@ -1,4 +1,4 @@
-# 102 Basic math calculation
+# 102 Basic Math Calculation
 
 import tensorflow as tf 
 
