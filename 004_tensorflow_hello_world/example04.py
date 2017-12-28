@@ -1,4 +1,4 @@
-# 004 Tensorflow hello world
+# 4 Tensorflow hello world
 
 import tensorflow as tf 
 
