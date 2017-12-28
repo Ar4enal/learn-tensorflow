@@ -1,5 +1,7 @@
 # Learn Tensorflow
 
+I have learned tensorflow for some months. Tensorflow is really a wonderful tool. It is easy to Use and and fast. I have test it on both CPU and GPU, and I think training with GPU is more than a handred times faster than CPU. I will post my test results later.
+
 ## Getting Started
 
 1. [Install Tensorflow on Windows](https://github.com/tengge1/learn-tensorflow/tree/master/001_install_tensorflow_on_windows/README.md)
