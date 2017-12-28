@@ -1,11 +1,3 @@
-MNIST_data/t10k-images-idx3-ubyte.gz
-MNIST_data/t10k-labels-idx1-ubyte.gz
-MNIST_data/train-images-idx3-ubyte.gz
-MNIST_data/train-labels-idx1-ubyte.gz
-logs/events.out.tfevents.1514385279.Lenovo-G470
-logs/events.out.tfevents.1514385318.Lenovo-G470
-logs/events.out.tfevents.1514385349.Lenovo-G470
-tmp/checkpoint
-tmp/model.ckpt.data-00000-of-00001
-tmp/model.ckpt.index
-tmp/model.ckpt.meta
+logs/*
+tmp/*
+MNIST_data/*
