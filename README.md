@@ -17,8 +17,8 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 4. [Using Conditional Operators](https://github.com/tengge1/learn-tensorflow/blob/master/104_using_conditional_operators/example104.py)
 5. [Data Types](https://github.com/tengge1/learn-tensorflow/blob/master/105_data_types/example105.py)
 6. [Using Placeholder](https://github.com/tengge1/learn-tensorflow/blob/master/106_using_placeholder/example106.py)
-
 7. [Generating Random Numbers](https://github.com/tengge1/learn-tensorflow/blob/master/107_generating_random_numbers/example107.py)
+8. [Circulation Operators](https://github.com/tengge1/learn-tensorflow/blob/master/108_circulation_operators/example108.py)
 
 ## Algorithm
 
