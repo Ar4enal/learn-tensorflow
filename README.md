@@ -16,6 +16,7 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 3. [Using Comparison Operators](https://github.com/tengge1/learn-tensorflow/blob/master/103_using_comparison_operators/example103.py)
 4. [Using Conditional Operators](https://github.com/tengge1/learn-tensorflow/blob/master/104_using_conditional_operators/example104.py)
 5. [Data types](https://github.com/tengge1/learn-tensorflow/blob/master/105_data_types/example105.py)
+6. [Using placeholder](https://github.com/tengge1/learn-tensorflow/blob/master/106_using_placeholder/example106.py)
 
 ## Samples
 
