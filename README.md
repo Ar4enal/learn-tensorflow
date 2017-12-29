@@ -20,6 +20,7 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 7. [Generating Random Numbers](https://github.com/tengge1/learn-tensorflow/blob/master/107_generating_random_numbers/example107.py)
 8. [Circulation Operators](https://github.com/tengge1/learn-tensorflow/blob/master/108_circulation_operators/example108.py)
 9. [using Variable](https://github.com/tengge1/learn-tensorflow/blob/master/109_using_variable/example109.py)
+10. [String Operations](https://github.com/tengge1/learn-tensorflow/blob/master/110_string_operations/example110.py)
 
 ## Algorithm
 
