@@ -29,5 +29,6 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 1. [Linear Regression with Low API](https://github.com/tengge1/learn-tensorflow/blob/master/301_linear_regression_with_low_api/example301.py)
 2. [Linear Regression with High API](https://github.com/tengge1/learn-tensorflow/blob/master/302_linear_regression_with_high_api/example302.py)
 3. [Linear Regression with Custom Model](https://github.com/tengge1/learn-tensorflow/blob/master/303_linear_regression_with_custom_model/example303.py)
+4. [MNIST with Softmax](https://github.com/tengge1/learn-tensorflow/tree/master/304_mnist_softmax)
 
 ## Models
