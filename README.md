@@ -26,7 +26,6 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 
 ## Samples
 
-1. MNIST
-2. Advance MNIST
+1. [Linear Regression with Low API](https://github.com/tengge1/learn-tensorflow/blob/master/301_linear_regression_with_low_api/example301.py)
 
 ## Models
