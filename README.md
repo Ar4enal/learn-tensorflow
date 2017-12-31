@@ -27,5 +27,6 @@ I have learned tensorflow for some months. Tensorflow is really a wonderful tool
 ## Samples
 
 1. [Linear Regression with Low API](https://github.com/tengge1/learn-tensorflow/blob/master/301_linear_regression_with_low_api/example301.py)
+2. [Linear Regression with High API](https://github.com/tengge1/learn-tensorflow/blob/master/302_linear_regression_with_high_api/example302.py)
 
 ## Models
