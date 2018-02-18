@@ -1,4 +1,4 @@
-# 第一节 在Windows上安装Tensorflow
+# 第1节 在Windows上安装Tensorflow
 
 1. 安装Python。
 
