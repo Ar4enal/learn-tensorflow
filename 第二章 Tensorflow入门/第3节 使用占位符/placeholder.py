@@ -1,12 +1,12 @@
-# 106 Using placeholder
+# 第3节 使用占位符
 
-# Placeholder is something that you can feed data later.
+# 占位符是一个可以在执行时赋值的容器。
 
 import tensorflow as tf
 
-# create a placeholder
+# 创建一个占位符
 x = tf.placeholder(tf.float32)
-y = tf.placeholder(tf.float32, [2, 3])
+y = tf.placeholder(tf.float32, [2, 3]) # [2, 3]是形状，表示2*3的矩阵
 
 sess = tf.Session()
 
