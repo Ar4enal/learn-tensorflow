@@ -1,12 +1,12 @@
-# 103 Using Comparison Operators
+# 第6节 比较运算
 
 import tensorflow as tf
 
-# constant
+# 常量
 a = tf.constant(1)
 b = tf.constant(2)
 
-# comparison operators
+# 各种比较运算符
 c = tf.equal(a, b)
 d = tf.not_equal(a, b)
 e = tf.less(a, b)
@@ -14,14 +14,11 @@ f = tf.less_equal(a, a)
 g = tf.greater(b, a)
 h = tf.greater_equal(a, a)
 
-# where operator
+# where运算，如果条件成立，返回第二个参数，不成立，返回第三个参数
 i = tf.where(tf.equal(a, a), 10, 11)
 j = tf.where(tf.equal(a, b), 10, 11)
 
-# create a session
 sess = tf.Session()
-
-# calculate the result
 result = sess.run([c, d, e, f, g, h, i, j])
 
 print('a equal b is %s'%result[0])
