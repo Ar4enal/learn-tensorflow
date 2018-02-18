@@ -1,11 +1,16 @@
 # Tensorflow教程
 
+Tensorflow官网教程非常好，建议英语好的同学直接到[Tensorflow官网](https://www.tensorflow.org/)查看，国内请访问`https://tensorflow.google.cn/`。
+
 ## 第一章 Tensorflow的安装方法
 
-1. [第1节 在Windows上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC1%E8%8A%82%20%E5%9C%A8Windows%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
-2. [第2节 在Ubuntu上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC2%E8%8A%82%20%E5%9C%A8Ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
-3. [第3节 安装Tensorboard](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC3%E8%8A%82%20%E5%AE%89%E8%A3%85Tensorboard/README.md)
-4. [第4节 编写第一个Tensorflow程序](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC4%E8%8A%82%20%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AATensorflow%E7%A8%8B%E5%BA%8F/hello_world.py)
+[第1节 在Windows上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC1%E8%8A%82%20%E5%9C%A8Windows%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
+
+[第2节 在Ubuntu上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC2%E8%8A%82%20%E5%9C%A8Ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
+
+[第3节 安装Tensorboard](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC3%E8%8A%82%20%E5%AE%89%E8%A3%85Tensorboard/README.md)
+
+[第4节 编写第一个Tensorflow程序](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC4%E8%8A%82%20%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AATensorflow%E7%A8%8B%E5%BA%8F/hello_world.py)
 
 ## Tutorials
 
