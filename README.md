@@ -1,13 +1,11 @@
-# Learn Tensorflow
+# Tensorflow教程
 
-I have learned tensorflow for some months. Tensorflow is really a wonderful tool. It is easy to Use and and fast. I have test it on both CPU and GPU, and I think training with GPU is more than a handred times faster than CPU. I will post my test results later.
+## 第一章 Tensorflow的安装方法
 
-## Getting Started
-
-1. [Install Tensorflow on Windows](https://github.com/tengge1/learn-tensorflow/tree/master/001_install_tensorflow_on_windows/README.md)
-2. [Install Tensorflow on Ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/002_install_tensorflow_on_ubuntu/README.md)
-3. [Install Tensorboard on Ubuntu](https://github.com/tengge1/learn-tensorflow/tree/master/003_install_tensorboard_on_ubuntu/README.md)
-4. [Tensorflow Hello World](https://github.com/tengge1/learn-tensorflow/tree/master/004_tensorflow_hello_world/example004.py)
+1. [第1节 在Windows上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC1%E8%8A%82%20%E5%9C%A8Windows%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
+2. [第2节 在Ubuntu上安装Tensorflow](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC2%E8%8A%82%20%E5%9C%A8Ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85Tensorflow/README.md)
+3. [第3节 安装Tensorboard](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC3%E8%8A%82%20%E5%AE%89%E8%A3%85Tensorboard/README.md)
+4. [第4节 编写第一个Tensorflow程序](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%80%E7%AB%A0%20Tensorflow%E7%9A%84%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/%E7%AC%AC4%E8%8A%82%20%E7%BC%96%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AATensorflow%E7%A8%8B%E5%BA%8F/hello_world.py)
 
 ## Tutorials
 
