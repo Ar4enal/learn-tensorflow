@@ -22,3 +22,16 @@ print('done')
 
 # 关闭会话
 sess.close()
+
+# 说明：Tensorflow支持的数据类型很多，例如：
+# a = tf.constant(1, tf.float16)
+# b = tf.constant(2, tf.float32)
+# c = tf.constant(3, tf.float64)
+# e = tf.constant(5, tf.complex64)
+# f = tf.constant(6, tf.complex128)
+# g = tf.constant(7, tf.int8)
+# h = tf.constant(8, tf.int16)
+# i = tf.constant(9, tf.int32)
+# j = tf.constant(10, tf.int64)
+# k = tf.constant(True, tf.bool)
+# l = tf.constant('Hello,world!', tf.string)
