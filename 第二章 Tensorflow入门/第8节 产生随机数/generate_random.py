@@ -1,9 +1,9 @@
-#107 Generating Random Numbers
+# 第8节 产生随机数
 
 import tensorflow as tf
 
-a = tf.random_normal([1])
-b = tf.random_normal([2], 1.0, 0.5)
+a = tf.random_normal([1]) # 形状
+b = tf.random_normal([2], 1.0, 0.5) # 形状，平均值
 c = tf.random_normal([2, 3])
 
 sess = tf.Session()
