@@ -1,4 +1,4 @@
-# 101 Constant
+# 第1节 常量
 import tensorflow as tf
 
 a = tf.constant('Hello, world!')
@@ -7,10 +7,10 @@ c = tf.constant(2.0, dtype = tf.float32)
 d = tf.constant([1, 2])
 e = tf.constant(5, dtype = tf.float32, shape = [2, 3])
 
-# create a session
+# 创建一个会话
 sess = tf.Session()
 
-# run the result
+# 执行，并输出结果
 result = sess.run([a, b, c, d, e])
 
 print('a=%s'%result[0])
@@ -20,5 +20,5 @@ print('d=%s'%result[3])
 print('e=%s'%result[4])
 print('done')
 
-# close session
+# 关闭会话
 sess.close()
