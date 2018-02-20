@@ -35,3 +35,5 @@ Tensorflow官网教程非常好，建议英语好的同学直接到[Tensorflow�
 ## 第三章 Tensorflow实例
 
 [第1节 线性拟合（高级接口）](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%20Tensorflow%E5%AE%9E%E4%BE%8B/%E7%AC%AC1%E8%8A%82%20%E7%BA%BF%E6%80%A7%E6%8B%9F%E5%90%88%EF%BC%88%E9%AB%98%E7%BA%A7%E6%8E%A5%E5%8F%A3%EF%BC%89/linear_regression.py)
+
+[第2节 线性拟合（低级接口）](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%20Tensorflow%E5%AE%9E%E4%BE%8B/%E7%AC%AC2%E8%8A%82%20%E7%BA%BF%E6%80%A7%E6%8B%9F%E5%90%88%EF%BC%88%E4%BD%8E%E7%BA%A7%E6%8E%A5%E5%8F%A3%EF%BC%89/linear_regression.py)
