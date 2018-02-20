@@ -56,7 +56,7 @@ def input_test(): # 评估输入函数
   return test.shuffle(1000).batch(100).make_one_shot_iterator().get_next()
 
 def main(argv):
-  # 使用数据训练模型，训练1000次
+  # 使用数据训练模型，训练2000次
   estimator.train(input_fn = input_train, steps = 2000)
 
   # 评估模型
