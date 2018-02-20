@@ -39,3 +39,6 @@ Tensorflow官网教程非常好，建议英语好的同学直接到[Tensorflow�
 [第2节 线性拟合（低级接口）](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%20Tensorflow%E5%AE%9E%E4%BE%8B/%E7%AC%AC2%E8%8A%82%20%E7%BA%BF%E6%80%A7%E6%8B%9F%E5%90%88%EF%BC%88%E4%BD%8E%E7%BA%A7%E6%8E%A5%E5%8F%A3%EF%BC%89/linear_regression.py)
 
 [第3节 线性拟合（自定义模型）](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%20Tensorflow%E5%AE%9E%E4%BE%8B/%E7%AC%AC3%E8%8A%82%20%E7%BA%BF%E6%80%A7%E6%8B%9F%E5%90%88%EF%BC%88%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B%EF%BC%89/linear_regression.py)
+
+[第4节 手写数字识别](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%B8%89%E7%AB%A0%20Tensorflow%E5%AE%9E%E4%BE%8B/%E7%AC%AC4%E8%8A%82%20%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/mnist.py)
+
