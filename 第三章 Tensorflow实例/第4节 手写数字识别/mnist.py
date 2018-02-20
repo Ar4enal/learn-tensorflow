@@ -13,7 +13,7 @@ W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 y = tf.matmul(x, W) + b
 
-cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = y_, logits = y))
+cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(labels = y_, logits = y))
 train_step = tf.train.GradientDescentOptimizer(learning_rate = 0.5).minimize(cross_entropy)
 
 init = tf.global_variables_initializer()
