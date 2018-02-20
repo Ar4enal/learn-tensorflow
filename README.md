@@ -32,13 +32,5 @@ Tensorflow官网教程非常好，建议英语好的同学直接到[Tensorflow�
 
 [第9节 字符串操作](https://github.com/tengge1/learn-tensorflow/blob/master/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20Tensorflow%E5%85%A5%E9%97%A8/%E7%AC%AC9%E8%8A%82%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/string_operate.py)
 
-## Algorithm
+## 第三章 Tensorflow实例
 
-## Samples
-
-1. [Linear Regression with Low API](https://github.com/tengge1/learn-tensorflow/blob/master/301_linear_regression_with_low_api/example301.py)
-2. [Linear Regression with High API](https://github.com/tengge1/learn-tensorflow/blob/master/302_linear_regression_with_high_api/example302.py)
-3. [Linear Regression with Custom Model](https://github.com/tengge1/learn-tensorflow/blob/master/303_linear_regression_with_custom_model/example303.py)
-4. [MNIST with Softmax](https://github.com/tengge1/learn-tensorflow/tree/master/304_mnist_softmax)
-
-## Models
