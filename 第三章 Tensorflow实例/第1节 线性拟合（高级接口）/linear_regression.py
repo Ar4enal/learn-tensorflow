@@ -44,7 +44,10 @@ test = tf.data.Dataset.from_tensor_slices(( { 'x': test_x }, test_y ))
 feature_columns = [
   tf.feature_column.numeric_column(key = 'x')
 ]
-estimator = tf.estimator.LinearRegressor(feature_columns = feature_columns)
+estimator = tf.estimator.LinearRegressor(
+  feature_columns = feature_columns,
+  model_dir = 'tmp/model'
+  )
 
 def input_train(): # 训练输入函数，打乱，然后取100个，可以循环取，生成一个迭代器
   return train.shuffle(1000).batch(100).repeat().make_one_shot_iterator().get_next()
