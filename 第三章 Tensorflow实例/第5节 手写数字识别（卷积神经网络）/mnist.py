@@ -59,15 +59,10 @@ def cnn_model_fn(features, labels, mode):
     inputs = dropout,
     units = 10
     )
-  predictions = {
-    'classes': tf.argmax(input = logits, axis = 1),
-    'probabilities': tf.nn.softmax(logits, name = 'softmax_tensor')
-  }
-
-  if mode == tf.estimator.ModeKeys.PREDICT:
-    return tf.estimator.EstimatorSpec(mode = mode, predictions = predictions)
   loss = tf.losses.sparse_softmax_cross_entropy(labels = labels, logits = logits)
-  if mode == tf.estimator.ModeKeys.TRAIN:
+
+  # 训练函数
+  def train_fn():
     optimizer = tf.train.GradientDescentOptimizer(learning_rate = 0.001)
     train_op = optimizer.minimize(
       loss = loss,
@@ -78,23 +73,45 @@ def cnn_model_fn(features, labels, mode):
       loss = loss,
       train_op = train_op
       )
-  eval_metric_ops = {
+
+  # 评估函数
+  def eval_fn():
+    eval_metric_ops = {
     'accuracy': tf.metrics.accuracy(
       labels = labels,
-      predictions = predictions['classes']
+      predictions = tf.argmax(input = logits, axis = 1)
       )
-  }
-  return tf.estimator.EstimatorSpec(
-    mode = mode,
-    loss = loss,
-    eval_metric_ops = eval_metric_ops
-    )
+    }
+    return tf.estimator.EstimatorSpec(
+      mode = mode,
+      loss = loss,
+      eval_metric_ops = eval_metric_ops
+      )
+
+  # 预测函数
+  def predict_fn():
+    return tf.estimator.EstimatorSpec(
+      mode = mode, 
+      predictions = {
+      'classes': tf.argmax(input = logits, axis = 1),
+      'probabilities': tf.nn.softmax(logits, name = 'softmax_tensor')
+      }
+      )
+
+  if mode == tf.estimator.ModeKeys.TRAIN:
+    return train_fn()
+  elif mode == tf.estimator.ModeKeys.EVAL:
+    return eval_fn()
+  else: # tf.estimator.ModeKeys.PREDICT
+    return predict_fn()
 
 def main(argv):
   estimator = tf.estimator.Estimator(
     model_fn = cnn_model_fn,
     model_dir = 'tmp/model'
     )
+
+  # 训练
   train_input_fn = tf.estimator.inputs.numpy_input_fn(
     x = { 'x': x_train },
     y = y_train,
@@ -106,6 +123,8 @@ def main(argv):
     input_fn = train_input_fn,
     steps = 1000
     )
+
+  # 评估
   eval_input_fn = tf.estimator.inputs.numpy_input_fn(
     x = { 'x': x_test },
     y = y_test,
