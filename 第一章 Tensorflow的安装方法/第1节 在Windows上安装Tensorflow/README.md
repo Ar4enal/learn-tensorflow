@@ -10,7 +10,7 @@
 
 3. 修改pip源。
 
-在国内，通过pip安装软件包是很慢的，还经常中断。你可以在`C:\Users\{你的用户名}\AppData\Local`目录下创建一个名称是`pip`的文件夹，然后在文件夹中创建一个名为`pip.conf`的文件，在里面输入以下内容。这样你就把pip源切换到阿里云了。
+在国内，通过pip安装软件包是很慢的，还经常中断。对于Windows，你可以在`C:\Users\{你的用户名}\`目录下创建一个名称是`pip`的文件夹，然后在文件夹中创建一个名为`pip.ini`的文件，在里面输入以下内容。这样你就把pip源切换到阿里云了。
 
 ```conf
 [global]
@@ -18,6 +18,8 @@ index-url=http://mirrors.aliyun.com/pypi/simple/
 [install] 
 trusted-host=mirrors.aliyun.com  
 ```
+
+对于Linux，需要创建一个`~/.pip/pip.conf`的文件，里面输入以上内容。
 
 4. 安装Tensorflow。
 
