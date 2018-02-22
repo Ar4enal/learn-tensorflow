@@ -1,65 +1,85 @@
 # 第6节 鸢尾花分类
 import tensorflow as tf
+import pandas as pd
 
 # 获取数据集
 TRAIN_URL = "http://download.tensorflow.org/data/iris_training.csv"
 TEST_URL = "http://download.tensorflow.org/data/iris_test.csv"
 
 CSV_COLUMN_NAMES = ['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Species']
+SPECIES = ['Setosa', 'Versicolor', 'Virginica']
 
-def load_data(label_name='Species'):
-    """Parses the csv file in TRAIN_URL and TEST_URL."""
+# 输入函数
+def train_input_fn(features, labels, batch_size):
+    dataset = tf.data.Dataset.from_tensor_slices((dict(features), labels))
+    dataset = dataset.shuffle(1000).repeat().batch(batch_size)
+    return dataset
 
-    # Create a local copy of the training set.
-    train_path = tf.keras.utils.get_file(fname=TRAIN_URL.split('/')[-1],
-                                         origin=TRAIN_URL)
-    # train_path now holds the pathname: ~/.keras/datasets/iris_training.csv
 
-    # Parse the local CSV file.
-    train = pd.read_csv(filepath_or_buffer=train_path,
-                        names=CSV_COLUMN_NAMES,  # list of column names
-                        header=0  # ignore the first row of the CSV file.
-                       )
-    # train now holds a pandas DataFrame, which is data structure
-    # analogous to a table.
+def eval_input_fn(features, labels, batch_size):
+    features = dict(features)
+    if labels is None:
+        inputs = features
+    else:
+        inputs = (features, labels)
 
-    # 1. Assign the DataFrame's labels (the right-most column) to train_label.
-    # 2. Delete (pop) the labels from the DataFrame.
-    # 3. Assign the remainder of the DataFrame to train_features
+    dataset = tf.data.Dataset.from_tensor_slices(inputs)
+    dataset = dataset.batch(batch_size)
+    return dataset
+
+def load_data(label_name = 'Species'):
+    train_path = tf.keras.utils.get_file(
+        fname = TRAIN_URL.split('/')[-1],
+        origin = TRAIN_URL
+        )
+    train = pd.read_csv(
+        filepath_or_buffer = train_path,
+        names = CSV_COLUMN_NAMES,
+        header = 0
+        )
     train_features, train_label = train, train.pop(label_name)
 
-    # Apply the preceding logic to the test set.
-    test_path = tf.keras.utils.get_file(TEST_URL.split('/')[-1], TEST_URL)
-    test = pd.read_csv(test_path, names=CSV_COLUMN_NAMES, header=0)
+    test_path = tf.keras.utils.get_file(
+    	TEST_URL.split('/')[-1], 
+    	TEST_URL
+    	)
+    test = pd.read_csv(
+    	filepath_or_buffer = test_path, 
+    	names = CSV_COLUMN_NAMES, 
+    	header=0
+    	)
     test_features, test_label = test, test.pop(label_name)
 
-    # Return four DataFrames.
     return (train_features, train_label), (test_features, test_label)
 
 def main(argv):
-    # Feature columns describe how to use the input.
-    my_feature_columns = []
+    (train_x, train_y), (test_x, test_y) = load_data()
+
+    feature_columns = []
     for key in train_x.keys():
-        my_feature_columns.append(tf.feature_column.numeric_column(key=key))
+        feature_columns.append(tf.feature_column.numeric_column(key = key))
 
     classifier = tf.estimator.DNNClassifier(
-        feature_columns=my_feature_columns,
-        hidden_units = [10, 10],
-        n_classes = 3)
+    	hidden_units = [10, 10],
+        feature_columns = feature_columns,
+        model_dir = 'tmp/model',
+        n_classes = 3
+        )
 
+    # 训练
     classifier.train(
-        input_fn = lambda: iris_data.train_input_fn(train_x, train_y,
-                                                 args.batch_size),
-        steps=args.train_steps)
+        input_fn = lambda: train_input_fn(train_x, train_y, 100),
+        steps= 1000
+        )
 
-    # Evaluate the model.
+    # 评估
     eval_result = classifier.evaluate(
-        input_fn=lambda:iris_data.eval_input_fn(test_x, test_y,
-                                                args.batch_size))
+        input_fn = lambda: eval_input_fn(test_x, test_y, 100)
+        )
 
     print('\nTest set accuracy: {accuracy:0.3f}\n'.format(**eval_result))
 
-    # Generate predictions from the model
+    # 预测
     expected = ['Setosa', 'Versicolor', 'Virginica']
     predict_x = {
         'SepalLength': [5.1, 5.9, 6.9],
@@ -69,9 +89,8 @@ def main(argv):
     }
 
     predictions = classifier.predict(
-        input_fn=lambda:iris_data.eval_input_fn(predict_x,
-                                                labels=None,
-                                                batch_size=args.batch_size))
+        input_fn = lambda: eval_input_fn(predict_x, labels = None, batch_size = 1)
+        )
 
     for pred_dict, expec in zip(predictions, expected):
         template = ('\nPrediction is "{}" ({:.1f}%), expected "{}"')
@@ -79,7 +98,7 @@ def main(argv):
         class_id = pred_dict['class_ids'][0]
         probability = pred_dict['probabilities'][class_id]
 
-        print(template.format(iris_data.SPECIES[class_id],
+        print(template.format(SPECIES[class_id],
                               100 * probability, expec))
 
 if __name__ == '__main__':
